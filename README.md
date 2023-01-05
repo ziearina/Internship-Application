@@ -1,4 +1,7 @@
-# Internship Application
+<div align="center">
+    <h1>Internship Application</h1>
+    <i font-size="2rem"></i>
+</div>
 
 A copy of the software application project I did during my diploma days with Visual Basic.NET. ->url: -coming soon-
 Recreate it as a web-based application.
