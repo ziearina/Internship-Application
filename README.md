@@ -3,7 +3,9 @@
     Status: -<i font-size="2rem">in progress</i>-
 </div>
 
-A copy of the software application project I did during my diploma days with Visual Basic.NET. ->url: -coming soon-
+<br>
+A copy of the software application project I did during my diploma days with Visual Basic.NET. <br>
+url: -coming soon-
 Recreate it as a web-based application.
 
 
