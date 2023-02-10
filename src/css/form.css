@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Ramaraja&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +12,139 @@
 
 :root {
 
+    /* colour */
+    --main-colour: #111D4A;
+    --sub-colour-1: #A7C6DA;
+    --sub-colour-2: #29524A;
+    --sub-colour-3: #A17C6B;
+    --sub-colour-4: #06070E;
+
+    /* fonts */
+    --header-font-family: 'Ramaraja', serif;
+    --body-font-family: 'Inter', sans-serif;
+
+    /* col */
+    --grid-template-columns: repeat(12, 1fr);
+    --grid-column-gap: 15px;
 }
 
 body {
-    background-color: yellow;
+    /* background-color: var(--sub-colour-3); */
 }
 
-.container {
-    background-color: red;
+.mob-col {
+    display: none;
+}
+
+.sign-up {
+    display: none;
+}
+
+.form {
+    margin: auto;
+    height: 100vh;
+}
+
+.inner-form{
+    margin: auto;
+    display: flex;
+    height: 37rem;
+}
+
+button {
+    font-family: var(--header-font-family);
+    background-color: var(--sub-colour-1);
+    border-radius: 25px;
+    width: 165px;
+    height: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    text-align: center;
+    margin: 0px 23.5%;
+    font-size: 25px;
+    line-height: 50px;
+    text-indent: 1px;
+    font-weight: 400;
+}
+
+.sign-in {
+    background: url("../media/login-form.jpg");
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    height: 100%;
+    z-index: 100;
+    border-radius: 25px 0px 0px 25px;
+}
+
+.content-form {
+    
+}
+
+
+/* tablet */
+@media screen and (min-width: 744px) {}
+
+
+/* -- sign up banner appear starts from here */
+@media screen and (min-width: 990px) {
+    
+    .sign-up {
+        display: block;
+        background-color: var(--main-colour);
+        width: 345px;
+        max-width: 345px;
+        color: white;
+        content: 'Interns';
+        padding: 11.5rem 20px;
+        border-radius: 0px 25px 25px 0px;
+        
+    }
+
+    .sign-up:hover{
+        box-shadow: 10px 10px 20px var(--sub-colour-1);
+
+    }
+
+    .sign-up:hover body{
+        background-color: white;
+
+    }
+
+    .headings, .footings {
+        display: inline-grid;
+        width: 100%;
+        font-family: var(--sub-header-font-family);
+    }
+
+    .footings{
+        margin-top: 10rem;
+        text-align: center;
+        display: flexbox;
+    }
+
+    .headings .header {
+        font-size: 40px;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+        font-family: var(--header-font-family);
+    }
+ 
+    .headings .sub-header {
+        font-size: 22px;
+        letter-spacing: 1.5px;
+        margin-top: -10px;
+    }
+
+    .footings .header {
+        font-size: 18px;
+        letter-spacing: 1px;
+
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1440px){
+   .mob-col {
+    display: block;
+   }
 }
