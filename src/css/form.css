@@ -28,62 +28,80 @@
     --grid-column-gap: 15px;
 }
 
-/* body {
-    background-color: var(--sub-colour-3);
-} */
+body {
+    background-image: url(../media/login-form.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    backdrop-filter: blur(3px);
+}
 
-.mob-col {
+.mob-col, .sign-up {
     display: none;
 }
 
-.sign-up {
-    display: none;
+.content-form {
+    margin: auto;
 }
 
 .form {
-    margin: auto;
     height: 100vh;
 }
 
-.inner-form{
+.inner-form {
+    background-color: white;
+    border-radius: 25px;
     margin: auto;
     display: flex;
-    height: 37rem;
+    padding: 5rem 1rem;
+    box-shadow: -10px -10px 30px var(--sub-colour-2);
 }
 
+.header-signin {
+    font-family: var(--header-font-family);
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+/*log in and sign up button*/
 button {
     font-family: var(--header-font-family);
     background-color: var(--sub-colour-1);
-    border-radius: 25px;
+    border-radius: 30px;
     width: 165px;
     height: 45px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     text-align: center;
-    margin: 0px 23.5%;
     font-size: 25px;
     line-height: 50px;
     text-indent: 1px;
     font-weight: 400;
 }
 
-.sign-in {
-    background: url("../media/login-form.jpg");
-    opacity: 0.6;
-    background-repeat: no-repeat;
-    height: 100%;
-    z-index: 100;
-    border-radius: 25px 0px 0px 25px;
-}
-
-
 /* tablet */
-@media screen and (min-width: 744px) {}
+@media screen and (min-width: 575px) {}
 
 
-/* -- sign up banner appear starts from here */
+/*  sign up banner appear starts from here */
 @media screen and (min-width: 990px) {
-    
+    .inner-form {
+        padding: 0 0rem;
+    }
+
+    .content-form {
+        width: 60%;
+    }
+
+    .sign-in {
+        border-radius: 25px 0px 0px 25px;
+    }
+
     .sign-up {
         display: block;
         background-color: var(--main-colour);
@@ -91,13 +109,14 @@ button {
         max-width: 345px;
         color: white;
         content: 'Interns';
-        padding: 11.5rem 20px;
+        padding: 10rem 20px;
         border-radius: 0px 25px 25px 0px;
+        /* box-shadow: 10px 10px 20px var(--sub-colour-1); */
         
     }
 
     .sign-up:hover{
-        box-shadow: 10px 10px 20px var(--sub-colour-1);
+        box-shadow: 10px 10px 20px var(--main-colour);
 
     }
 
@@ -132,15 +151,17 @@ button {
     }
 
     .footings .header {
-        font-size: 18px;
+        font-size: 14px;
         letter-spacing: 1px;
+        text-align: left;
+        margin-left: 5px;
 
     }
 }
 
 /* desktop */
 @media screen and (min-width: 1440px){
-   .mob-col {
-    display: block;
-   }
-}
+    .mob-col {
+     display: block;
+    }
+ }
