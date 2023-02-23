@@ -14,7 +14,7 @@
 
     /* colour */
     --main-colour: #111D4A;
-    --sub-colour-1: #A7C6DA;
+    --sub-colour-1: #bed7e7;
     --sub-colour-2: #29524A;
     --sub-colour-3: #A17C6B;
     --sub-colour-4: #06070E;
@@ -55,7 +55,7 @@ body {
     margin: auto;
     display: flex;
     padding: 5rem 1rem;
-    box-shadow: -10px -10px 30px var(--sub-colour-2);
+    box-shadow: -10px -10px 30px var(--main-colour);
 }
 
 .header-signin {
@@ -68,21 +68,36 @@ body {
     letter-spacing: 4px;
 }
 
-/*log in and sign up button*/
-button {
+.btn-login-submit, .btn-signup-submit {
     font-family: var(--header-font-family);
     background-color: var(--sub-colour-1);
-    border-radius: 30px;
-    width: 165px;
-    height: 45px;
     text-transform: uppercase;
-    letter-spacing: 2.5px;
     text-align: center;
     font-size: 25px;
     line-height: 50px;
-    text-indent: 1px;
     font-weight: 400;
 }
+
+/*log in and sign up button*/
+.btn-login-submit {
+    border-radius: 30px;
+    width: 165px;
+    height: 45px;
+    text-indent: 1px;
+    letter-spacing: 2.5px;
+    
+}
+
+.btn-signup-submit {
+    width: 12rem;
+    height: 40px;
+    letter-spacing: 1.5px;
+}
+
+.btn-login {
+    margin-top: 3rem;
+}
+
 
 /* tablet */
 @media screen and (min-width: 575px) {}
@@ -157,11 +172,37 @@ button {
         margin-left: 5px;
 
     }
+
+    .sign-in {
+        margin: auto;
+        
+    }
+
+    .content-form {
+        width: 94%;
+    }
+
+    
+    .txt-div {
+        margin: 2.5rem 0;
+    }
+
+    .login-form {
+        margin: auto;
+        width: 25rem;
+    }
+
+    input {
+        margin-left: 15px;
+    }
+
 }
 
 /* desktop */
 @media screen and (min-width: 1440px){
+
     .mob-col {
-     display: block;
+        display: block;
     }
+
  }
